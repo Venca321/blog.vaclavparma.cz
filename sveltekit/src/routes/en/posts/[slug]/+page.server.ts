@@ -1,5 +1,5 @@
 import type { PageServerLoad } from "./$types";
-import settings from "../../../settings"
+import settings from "../../../../settings"
 
 const key = "3028397c9ba109fe21b8aabb61"
 

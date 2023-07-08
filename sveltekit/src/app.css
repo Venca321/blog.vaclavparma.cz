@@ -1,0 +1,20 @@
+html {
+    background-color: var(--primary);
+    touch-action: manipulation;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: Arial;
+    font-style: bold;
+}
+
+p {
+    font-family: Arial;
+    font-style: normal;
+}
+
+a {
+    font-family: Arial;
+    font-style: normal;
+}

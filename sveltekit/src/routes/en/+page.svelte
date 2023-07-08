@@ -20,6 +20,6 @@
 			<p>{tag.name}</p>
 		{/each}
 		<p>{post.excerpt}</p>
-		<a href="/posts/{post.slug}">Odkaz</a>
+		<a href="/en/posts/{post.slug}">Odkaz</a>
 	</div>
 {/each}
