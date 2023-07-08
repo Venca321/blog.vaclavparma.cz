@@ -4,7 +4,7 @@ import settings from "../../settings"
 const key = settings.backend.apikey;
 
 export const load: PageServerLoad = async () => {
-    const response = await fetch(`http://${settings.backend.ip}:${settings.backend.port}/ghost/api/content/posts?key=${key}&include=tags,authors`, {
+    const response = await fetch(`http://${settings.backend.ip}:${settings.backend.port}/ghost/api/content/posts?key=${key}&include=tags,authors&limit=25`, {
         method: 'GET',
     });
     const data = await response.json();
