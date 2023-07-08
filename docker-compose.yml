@@ -1,0 +1,30 @@
+version: '3'
+services:
+  ghost:
+    container_name: ghost
+    image: ghost:alpine
+    restart: unless-stopped
+    ports:
+      - 2368:2368
+    environment:
+      - server__host=0.0.0.0
+      - database__client=sqlite3
+      - database__connection__filename=/var/lib/ghost/content/data/ghost.db
+    volumes:
+      - ./content:/var/lib/ghost/content:Z
+    networks:
+      - main-network
+
+  sveltekit:
+    container_name: sveltekit
+    build: sveltekit/
+    restart: unless-stopped
+    ports:
+      - 5001:5001
+    networks:
+      - main-network
+
+networks:
+  main-network:
+    attachable: true
+    name: daurialife
