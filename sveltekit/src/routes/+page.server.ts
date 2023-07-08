@@ -1,7 +1,7 @@
 import type { PageServerLoad } from "./$types";
 import settings from "../settings"
 
-const key = "3028397c9ba109fe21b8aabb61"
+const key = settings.backend.apikey;
 
 export const load: PageServerLoad = async () => {
     const response = await fetch(`http://${settings.backend.ip}:${settings.backend.port}/ghost/api/content/posts?key=${key}&include=tags,authors`, {
