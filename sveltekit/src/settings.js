@@ -1,6 +1,6 @@
 export default {
     backend: {
-      "ip": "localhost",
+      "ip": "ghost",
       "port": "2368",
       "apikey": import.meta.env.apikey,
     }
