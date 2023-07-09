@@ -8,10 +8,25 @@ services:
       - 2368:2368
     environment:
       - server__host=0.0.0.0
-      - database__client=sqlite3
-      - database__connection__filename=/var/lib/ghost/content/data/ghost.db
+      - database__client=mysql
+      - database__connection__host=mysql
+      - database__connection__user=root
+      - database__connection__password=mysecretpassword
+      - database__connection__database=ghost
     volumes:
       - ./content:/var/lib/ghost/content:Z
+    networks:
+      - main-network
+
+  mysql:
+    container_name: mysql
+    image: mysql:latest
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysecretpassword
+      - MYSQL_DATABASE=ghost
+    volumes:
+      - ./mysql_data:/var/lib/mysql:Z
     networks:
       - main-network
 
