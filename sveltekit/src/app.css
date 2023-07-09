@@ -43,13 +43,12 @@ p {
 a {
     font-family: Arial;
     font-style: normal;
-    color: var(--on-tertiary);
+    color: var(--secondary);
     text-decoration: underline;
     transition: 0.15s;
 }
 
 a:hover {
-    color: var(--secondary);
     text-decoration: underline;
 }
 
