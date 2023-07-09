@@ -18,6 +18,6 @@
 		--on-secondary: #323232;
 		--tertiary: #070f17;
 		--on-tertiary: #ffffff;
-		--blog: #2b2f33;
+		--blog: #15171a;
 	}
 </style>

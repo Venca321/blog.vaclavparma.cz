@@ -42,7 +42,7 @@
 		margin-bottom: 2%;
 		padding: 16px;
 		border-radius: 12px;
-		background-color: var(--blog);
+		background-color: #202327;
 	}
 
 	#post-text {

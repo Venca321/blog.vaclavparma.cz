@@ -58,11 +58,16 @@ ul {
 }
 
 pre {
-    background-color: var(--tertiary);
+    background-color: #202327;
+    border: 1px solid #202327;
     color: var(--on-tertiary);
     padding: 10px 10px 10px 10px;
-    border-radius: 5px;
+    border-radius: 3px;
     overflow-x: auto;
+}
+
+pre:hover {
+    border: 1px solid #1dd645;
 }
 
 pre::-webkit-scrollbar {

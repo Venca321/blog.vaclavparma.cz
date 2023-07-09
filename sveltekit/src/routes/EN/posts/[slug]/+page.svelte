@@ -39,7 +39,7 @@
 		margin-bottom: -20vh;
 		background-color: var(--blog);
 		border-radius: 16px;
-		opacity: 0.8;
+		opacity: 0.92;
 	}
 
 	#heading {
@@ -56,6 +56,7 @@
 		font-size: 64px;
 		margin-top: 0%;
 		margin-bottom: 0%;
+		color: var(--secondary);
 	}
 
 	#info {
