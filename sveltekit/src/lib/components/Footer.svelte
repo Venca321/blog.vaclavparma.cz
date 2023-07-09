@@ -19,4 +19,10 @@
 		text-align: center;
 		padding-top: 8vh;
 	}
+
+	@media (max-width: 800px) {
+		p {
+			font-size: 20px;
+		}
+	}
 </style>

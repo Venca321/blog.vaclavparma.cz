@@ -84,4 +84,28 @@
 		margin-right: 10%;
 		margin-bottom: 5%;
 	}
+
+	@media (max-width: 800px) {
+		section {
+			width: 90%;
+			margin-top: 20%;
+		}
+
+		h1 {
+			font-size: 38px;
+		}
+
+		#heading {
+			width: 92%;
+			margin-bottom: 7%;
+		}
+
+		#main-img {
+			margin-bottom: 5%;
+		}
+
+		#info p {
+			font-size: 16px;
+		}
+	}
 </style>

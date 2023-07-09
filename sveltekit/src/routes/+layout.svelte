@@ -4,7 +4,7 @@
 	import Footer from '../lib/components/Footer.svelte';
 </script>
 
-<Navbar show_lang="EN" href="EN" now_href="" />
+<Navbar variant="CZ" />
 
 <slot />
 

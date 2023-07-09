@@ -87,5 +87,40 @@
 
 	a:hover {
 		translate: 8px 0px;
+		text-decoration: none !important;
+	}
+
+	@media (max-width: 800px) {
+		#post {
+			grid-template-columns: auto;
+			grid-template-rows: auto auto;
+			grid-gap: 1vh;
+			width: 85%;
+			height: 50vh;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#post-text {
+			width: 100%;
+			margin-right: 0;
+			display: grid;
+		}
+
+		#post-text-p {
+			margin-left: 0;
+			height: 20vh;
+		}
+
+		#info {
+			margin-left: 0;
+			margin-top: -10%;
+		}
+
+		img {
+			width: 100%;
+			max-height: 25vh;
+			border-radius: 10px;
+		}
 	}
 </style>

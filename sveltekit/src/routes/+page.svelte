@@ -14,6 +14,7 @@
 <div id="main">
 	<div id="main-text">
 		<h1>Václav Parma blog</h1>
+		<p>Projekty a příběhy každodenního života</p>
 	</div>
 </div>
 
@@ -40,7 +41,6 @@
 	}
 
 	#main-text h1 {
-		font-size: 86px;
 		color: var(--on-primary);
 	}
 </style>

@@ -1,20 +1,32 @@
 <script lang="ts">
-	export let show_lang: string;
-	export let href: string;
-	export let now_href: string;
+	export let variant: string;
 </script>
 
-<div id="navbar">
-	<div id="container">
-		<a href="https://vaclavparma.cz/{now_href}"><img src="../images/logo.png" alt="Domů" /></a>
-		<div id="menu">
-			<a href="https://vaclavparma.cz/{now_href}#about">O mně</a>
-			<a href="https://vaclavparma.cz/{now_href}#kontakt">Kontakt</a>
-			<a href="/{now_href}">Blog</a>
+{#if variant === 'EN'}
+	<div id="navbar">
+		<div id="container">
+			<a href="https://vaclavparma.cz/EN">Home</a>
+			<div id="menu">
+				<a href="https://vaclavparma.cz/EN#about">About me</a>
+				<a href="https://vaclavparma.cz/EN#kontakt">Contact</a>
+				<a href="/EN">Blog</a>
+			</div>
+			<a href="/">EN</a>
 		</div>
-		<a href="/{href}">{show_lang}</a>
 	</div>
-</div>
+{:else}
+	<div id="navbar">
+		<div id="container">
+			<a href="https://vaclavparma.cz/">Domů</a>
+			<div id="menu">
+				<a href="https://vaclavparma.cz/#about">O mně</a>
+				<a href="https://vaclavparma.cz/#kontakt">Kontakt</a>
+				<a href="/">Blog</a>
+			</div>
+			<a href="/EN">CZ</a>
+		</div>
+	</div>
+{/if}
 
 <style>
 	#navbar {
@@ -51,5 +63,15 @@
 		display: flex;
 		justify-content: space-between;
 		width: 30%;
+	}
+
+	@media (max-width: 800px) {
+		#navbar a {
+			font-size: 18px;
+		}
+
+		#menu {
+			width: 60%;
+		}
 	}
 </style>
