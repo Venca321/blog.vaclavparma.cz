@@ -12,6 +12,10 @@
 	});
 </script>
 
+<svelte:head>
+	<meta name="description" content={post.excerpt} />
+</svelte:head>
+
 <section>
 	<div id="heading">
 		<h1>{post.title}</h1>

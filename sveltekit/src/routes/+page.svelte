@@ -11,6 +11,10 @@
 	}
 </script>
 
+<svelte:head>
+	<meta name="description" content="Václav Parma blog - Projekty a příběhy každodenního života" />
+</svelte:head>
+
 <div id="main">
 	<div id="main-text">
 		<h1>Václav Parma blog</h1>

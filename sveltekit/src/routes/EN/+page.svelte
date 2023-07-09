@@ -11,10 +11,14 @@
 	}
 </script>
 
+<svelte:head>
+	<meta name="description" content="Václav Parma blog - Projects and stories of everyday life" />
+</svelte:head>
+
 <div id="main">
 	<div id="main-text">
 		<h1>Václav Parma blog</h1>
-		<p>Projects and Everyday Life Stories</p>
+		<p>Projects and stories of everyday life</p>
 	</div>
 </div>
 
