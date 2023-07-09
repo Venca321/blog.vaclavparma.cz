@@ -17,7 +17,7 @@
 		<h1>{post.title}</h1>
 		<p>{time}</p>
 	</div>
-	<img id="main-img" src={post.feature_image} alt={post.feature_image_alt} />
+	<img loading="lazy" id="main-img" src={post.feature_image} alt={post.feature_image_alt} />
 	<div id="text">
 		{@html post.html}
 	</div>

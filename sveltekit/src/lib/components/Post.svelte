@@ -17,8 +17,8 @@
 	});
 </script>
 
-<a id="post" {href}>
-	<img src={img} alt={img_alt} />
+<a id="post" data-sveltekit-preload-data="hover" {href}>
+	<img loading="lazy" src={img} alt={img_alt} />
 	<div id="post-text">
 		<h1>{title}</h1>
 		<p id="post-text-p">{text}</p>

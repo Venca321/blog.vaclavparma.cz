@@ -14,14 +14,6 @@
 				<div id="stars"></div>
 				<div id="stars2"></div>
 				<div id="stars3"></div>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
 			</div>
 		</section>
 		<div id="main" style="display: contents">%sveltekit.body%</div>
@@ -106,100 +98,5 @@
 		to {
 			transform: translateY(2000px);
 		}
-	}
-
-	span{
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 4px;
-		height: 4px;
-		background: #fff;
-		border-radius: 50%;
-		box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
-		animation: animate 30s linear infinite;
-	}
-
-	span::before{
-		content: '';
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 300px;
-		height: 1px;
-		background: linear-gradient(90deg, #fff, transparent);
-	}
-
-	@keyframes animate {
-		0%{
-			transform: rotate(225deg) translateX(500px);
-		}
-		100%{
-			transform: rotate(225deg) translateX(-30000px);
-			}
-	}
-
-	span:nth-child(1){
-		top: -300;
-		left: -300;
-		right: initial;
-		animation-delay: 0;
-		animation-duration: 10s;
-	}
-
-	span:nth-child(2){
-		top: -300;
-		left: -220px;
-		right: initial;
-		animation-delay: 2s;
-		animation-duration: 30s;
-	}
-
-	span:nth-child(3){
-		top: -220px;
-		left: -300px;
-		right: initial;
-		animation-delay: 4s;
-		animation-duration: 20s;
-	}
-
-	span:nth-child(4){
-		top: -300;
-		left: -120px;
-		right: initial;
-		animation-delay: 6s;
-		animation-duration: 15s;
-	}
-
-	span:nth-child(5){
-		top: -300;
-		left: 300px;
-		right: initial;
-		animation-delay: 10s;
-		animation-duration: 30s;
-	}
-
-	span:nth-child(6){
-		top: 0px;
-		left: -300px;
-		right: initial;
-		animation-delay: 10s;
-		animation-duration: 17.5s;
-	}
-
-	span:nth-child(7){
-		top: -300px;
-		left: 400px;
-		right: initial;
-		animation-delay: 14s;
-		animation-duration: 12.5s;
-	}
-
-	span:nth-child(8){
-		top: -300px;
-		left: 700px;
-		right: initial;
-		animation-delay: 7.5s;
-		animation-duration: 22.5s;
 	}
 </style>

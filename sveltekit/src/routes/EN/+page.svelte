@@ -26,7 +26,7 @@
 		author={post.authors[0].name}
 		updated_at={post.updated_at}
 		text={post.excerpt}
-		href="/posts/{post.slug}"
+		href="/EN/posts/{post.slug}"
 	/>
 {/each}
 
