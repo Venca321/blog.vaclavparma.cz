@@ -7,7 +7,7 @@ html {
 h1 {
     font-family: Arial;
     font-style: bold;
-    color: var(--secondary);
+    color: var(--on-tertiary);
     font-size: 56px;
     margin-top: 12.5%;
     margin-bottom: 2%;
@@ -16,7 +16,7 @@ h1 {
 h2 {
     font-family: Arial;
     font-style: bold;
-    color: var(--secondary);
+    color: var(--on-tertiary);
     font-size: 38px;
     margin-top: 8%;
     margin-bottom: 0%;
@@ -25,7 +25,7 @@ h2 {
 h3 {
     font-family: Arial;
     font-style: bold;
-    color: var(--secondary);
+    color: var(--on-tertiary);
     font-size: 26px;
     margin-top: 6%;
     margin-bottom: 0%;
@@ -55,6 +55,18 @@ a:hover {
 
 ul {
     color: var(--on-tertiary);
+}
+
+pre {
+    background-color: var(--tertiary);
+    color: var(--on-tertiary);
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+pre::-webkit-scrollbar {
+    width: 8px;
 }
 
 @media (max-width: 800px) {
