@@ -47,4 +47,8 @@
 	#main-text h1 {
 		color: var(--on-primary);
 	}
+
+	#main-text p {
+		font-size: 20px;
+	}
 </style>

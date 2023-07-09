@@ -12,11 +12,12 @@
 
 <style>
 	:global(:root) {
-		--primary: #091b2a;
+		--primary: #15171a;
 		--on-primary: #fefefe;
 		--secondary: #3185fc;
 		--on-secondary: #323232;
 		--tertiary: #070f17;
 		--on-tertiary: #fefefe;
+		--blog: #2b2f33;
 	}
 </style>

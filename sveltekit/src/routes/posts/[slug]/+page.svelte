@@ -37,9 +37,9 @@
 		margin: auto auto;
 		margin-top: 10%;
 		margin-bottom: -20vh;
-		background-color: var(--tertiary);
+		background-color: var(--blog);
 		border-radius: 16px;
-		opacity: 0.9;
+		opacity: 0.8;
 	}
 
 	#heading {
@@ -76,7 +76,7 @@
 		width: 90%;
 		max-height: 80vh;
 		margin-left: 5%;
-		margin-bottom: 7%;
+		margin-bottom: -1.5%;
 	}
 
 	img {
@@ -84,9 +84,9 @@
 	}
 
 	#text {
-		margin-left: 10%;
-		margin-right: 10%;
-		margin-bottom: 5%;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-bottom: 15%;
 	}
 
 	@media (max-width: 800px) {
@@ -99,13 +99,18 @@
 			font-size: 38px;
 		}
 
+		#text {
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+
 		#heading {
 			width: 92%;
 			margin-bottom: 7%;
 		}
 
 		#main-img {
-			margin-bottom: 5%;
+			margin-bottom: 1%;
 		}
 
 		#info p {
