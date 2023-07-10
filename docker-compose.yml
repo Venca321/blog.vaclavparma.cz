@@ -13,6 +13,13 @@ services:
       - database__connection__user=root
       - database__connection__password=mysecretpassword
       - database__connection__database=ghost
+      - mail__transport=SMTP
+      - mail__options__service=Mailgun
+      - mail__options__host=smtp.mailgun.org
+      - mail__options__port=587
+      - mail__options__auth__user=postmaster@mydomain.com
+      - mail__options__auth__pass=smtpmailgunpassword
+      - 
     volumes:
       - ./content:/var/lib/ghost/content:Z
     networks:
