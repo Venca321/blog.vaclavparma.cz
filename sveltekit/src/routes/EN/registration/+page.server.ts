@@ -16,7 +16,7 @@ export const actions: Actions = {
                 version: 'v3.2'
             });
     
-            await api.members.add({email: email, name: name, newsletters:  [{"id": settings.newsletter.cs}]})
+            await api.members.add({email: email, name: name, newsletters:  [{"id": settings.newsletter.en}]})
         } catch (error){
             console.log(error);
             throw redirect(303, `/message?text=${encodeURIComponent('Registration failed')}&back=${encodeURIComponent('Go back to the blog')}`); 
