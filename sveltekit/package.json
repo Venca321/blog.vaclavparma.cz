@@ -24,6 +24,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tryghost/admin-api": "^1.13.7",
 		"@tryghost/content-api": "^1.11.15"
 	}
 }

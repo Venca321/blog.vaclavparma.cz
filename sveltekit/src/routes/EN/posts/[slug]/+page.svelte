@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+
 	export let data;
 	let post = data.post.posts[0];
 
@@ -24,6 +26,10 @@
 	<img loading="lazy" id="main-img" src={post.feature_image} alt={post.feature_image_alt} />
 	<div id="text">
 		{@html post.html}
+	</div>
+	<div id="buttons">
+		<button on:click={() => goto('/EN/registration')}>Odebírat</button>
+		<button on:click={() => goto('/EN/registration/cancel')}>Zrušit odběr</button>
 	</div>
 	<div id="info">
 		<p>{post.authors[0].name}</p>
@@ -87,7 +93,28 @@
 	#text {
 		margin-left: 25%;
 		margin-right: 25%;
-		margin-bottom: 15%;
+		margin-bottom: 7%;
+	}
+
+	#buttons {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 8%;
+		margin-bottom: 8%;
+	}
+
+	#buttons button {
+		width: 110px;
+		height: 32px;
+		border-style: solid;
+		border-radius: 5px;
+		background-color: var(--primary);
+		color: var(--on-primary);
+		font-size: 16px;
+		margin: 0 10px 0 10px;
+		cursor: pointer;
 	}
 
 	@media (max-width: 800px) {
@@ -116,6 +143,11 @@
 
 		#info p {
 			font-size: 16px;
+		}
+
+		#buttons {
+			margin-top: 16%;
+			margin-bottom: 16%;
 		}
 	}
 </style>

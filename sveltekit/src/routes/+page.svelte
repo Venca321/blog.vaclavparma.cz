@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import Post from '$lib/components/Post.svelte';
 	import { createSearchStore, searchHandler } from '$lib/stores/search';
 	import { onDestroy } from 'svelte';
@@ -26,6 +27,10 @@
 	<div id="main-text">
 		<h1>Václav Parma blog</h1>
 		<p>Projekty a příběhy každodenního života</p>
+	</div>
+	<div id="buttons">
+		<button on:click={() => goto('/registration')}>Odebírat</button>
+		<button on:click={() => goto('/registration/cancel')}>Zrušit odběr</button>
 	</div>
 </div>
 
@@ -63,10 +68,27 @@
 
 	#main-text h1 {
 		color: var(--on-primary);
+		margin-bottom: 0;
 	}
 
 	#main-text p {
 		font-size: 20px;
+	}
+
+	#buttons {
+		margin-top: 1%;
+	}
+
+	#buttons button {
+		width: 110px;
+		height: 32px;
+		border-style: solid;
+		border-radius: 5px;
+		background-color: var(--primary);
+		color: var(--on-primary);
+		font-size: 16px;
+		margin: 0 10px 0 10px;
+		cursor: pointer;
 	}
 
 	#bar {
@@ -118,6 +140,14 @@
 	}
 
 	@media (max-width: 800px) {
+		#main-text p {
+			font-size: 18px;
+		}
+
+		#buttons {
+			margin-top: 3%;
+		}
+
 		#main {
 			height: 22vh;
 		}
