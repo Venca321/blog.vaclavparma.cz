@@ -1,5 +1,5 @@
 
-import settings from "../../settings.js"
+import settings from "../../../settings.js"
 
 const key = settings.backend.apikey;
 const response = await fetch(`http://${settings.backend.ip}:${settings.backend.port}/ghost/api/content/posts?key=${key}&include=tags`, {
