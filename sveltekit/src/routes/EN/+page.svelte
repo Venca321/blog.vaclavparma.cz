@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import Post from '$lib/components/Post.svelte';
 	import { createSearchStore, searchHandler } from '$lib/stores/search';
 	import { onDestroy } from 'svelte';
@@ -27,6 +28,10 @@
 		<h1>Václav Parma blog</h1>
 		<p>Projects and stories of everyday life</p>
 	</div>
+	<div id="buttons">
+		<button on:click={() => goto('/EN/registration')}>Subscribe</button>
+		<button on:click={() => goto('/EN/registration/cancel')}>Unsubscribe</button>
+	</div>
 </div>
 
 <div id="bar">
@@ -53,20 +58,37 @@
 
 <style>
 	#main {
-		height: 40vh;
+		height: 32vh;
 		text-align: center;
 	}
 
 	#main-text {
-		margin-top: 40vh;
+		margin-top: 28vh;
 	}
 
 	#main-text h1 {
 		color: var(--on-primary);
+		margin-bottom: 0;
 	}
 
 	#main-text p {
 		font-size: 20px;
+	}
+
+	#buttons {
+		margin-top: 1%;
+	}
+
+	#buttons button {
+		width: 110px;
+		height: 32px;
+		border-style: solid;
+		border-radius: 5px;
+		background-color: var(--primary);
+		color: var(--on-primary);
+		font-size: 16px;
+		margin: 0 10px 0 10px;
+		cursor: pointer;
 	}
 
 	#bar {
@@ -118,19 +140,38 @@
 	}
 
 	@media (max-width: 800px) {
+		#main-text p {
+			font-size: 18px;
+		}
+
+		#buttons {
+			margin-top: 3%;
+		}
+
+		#main {
+			height: 22vh;
+		}
+
+		#main-text {
+			margin-top: 22vh;
+		}
+
 		#bar {
 			width: 100%;
 		}
 
+		#filters {
+			margin-top: 1vh;
+		}
+
 		#filters label {
 			width: 30%;
-			margin-bottom: 2vh;
 		}
 
 		#search-bar {
 			width: 90%;
 			margin-left: 0;
-			margin-top: 2vh;
+			margin-top: 1vh;
 			margin-bottom: 2vh;
 		}
 	}

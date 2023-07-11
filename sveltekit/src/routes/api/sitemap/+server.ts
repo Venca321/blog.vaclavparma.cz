@@ -20,7 +20,7 @@ for (const post in data.posts) {
 }
 
 
-const pages: any[] = ["EN"] //list of pages as a string ex. ["about", "blog", "contact"]
+const pages: any[] = ["registration", "registration/cancel", "EN", "EN/registration", "EN/registration/cancel"] //list of pages as a string ex. ["about", "blog", "contact"]
 
 const site = "https://blog.vaclavparma.cz"
 
