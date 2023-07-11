@@ -19,7 +19,6 @@ services:
       - mail__options__port=587
       - mail__options__auth__user=postmaster@mydomain.com
       - mail__options__auth__pass=smtpmailgunpassword
-      - 
     volumes:
       - ./content:/var/lib/ghost/content:Z
     networks:
