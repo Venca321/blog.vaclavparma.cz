@@ -14,6 +14,7 @@
 
 <svelte:head>
 	<meta name="description" content={post.excerpt} />
+	<title>{post.title}</title>
 </svelte:head>
 
 <section>

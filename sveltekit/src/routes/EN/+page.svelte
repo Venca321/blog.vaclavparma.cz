@@ -53,12 +53,12 @@
 
 <style>
 	#main {
-		height: 40vh;
+		height: 32vh;
 		text-align: center;
 	}
 
 	#main-text {
-		margin-top: 40vh;
+		margin-top: 28vh;
 	}
 
 	#main-text h1 {
@@ -118,19 +118,30 @@
 	}
 
 	@media (max-width: 800px) {
+		#main {
+			height: 22vh;
+		}
+
+		#main-text {
+			margin-top: 22vh;
+		}
+
 		#bar {
 			width: 100%;
 		}
 
+		#filters {
+			margin-top: 1vh;
+		}
+
 		#filters label {
 			width: 30%;
-			margin-bottom: 2vh;
 		}
 
 		#search-bar {
 			width: 90%;
 			margin-left: 0;
-			margin-top: 2vh;
+			margin-top: 1vh;
 			margin-bottom: 2vh;
 		}
 	}
